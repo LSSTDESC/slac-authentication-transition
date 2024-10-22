@@ -2,7 +2,7 @@
 <html>
 
 <head>
-     <title>Checklist for the SLAC Transition to Federated Identy Authentication</title>
+     <title>Checklist for the SLAC Transition to Federated Identity Authentication</title>
      <meta http-equiv="content-type" content="text/html; charset=utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
@@ -67,6 +67,11 @@
                vertical-align: top;
           }
 
+          .normaltext {
+               vertical-align: top;
+               flex-grow: 1;
+          }
+
           .text {
                vertical-align: top;
                flex-grow: 1;
@@ -86,14 +91,14 @@
 
 <body>
      <div id="page">
-          <h1>Checklist for the SLAC Transition to Federated Identy Authentication</h1>
-          <h3>Here are a few useful things you can do to prepare yourself</h3>
+          <h1>Checklist for the SLAC Transition to Federated Identity Authentication</h1>
+          <h2><em>Here is a step-by-step list of things to do the transition smoothly</em></h2>
           <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <div class="progress-container">
+          <!-- <div class="progress-container">
                <div id="progress">
                     <div id="progress-text"></div>
                </div>
-          </div>
+          </div> -->
 
           <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
           <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -240,147 +245,88 @@
           </div>
 
           <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- Computing etc. -->
-          <h2>Computing resources, datasets , code etc.</h2>
+          <!-- Windows account -->
+          <h2>Reactivating a SLAC Windows account</h2>
           <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- IN2P3 -->
-          <!--     <h3>IN2P3</h3>
-     <div class="item">
-        <div class="box">
-             <input type="checkbox">
-        </div>
-        <div class="text">
-            As an LSST DESC member, you can request the setup of an IN2P3 account, you will find all the necessary information <a href="https://doc.cc.in2p3.fr/en/Getting-started/access.html">here</a>.
-            Pay attention to requesting your account before the beginning of the week, as it’s quick but might still need 24 to 48h to be up and running.
-        </div>
-     </div>
--->
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!--GitHub-->
-          <h3>GitHub</h3>
+          <!--IT support-->
+          <h3>Contact SLAC IT support</h3>
+          <div class="item">
+               <div class="normaltext">
+                    Contacting <a href="https://it.slac.stanford.edu/support" title="IT support contact page">IT support</a> is the only way to reactivate your SLAC Windows account.
+               </div>     
+          </div>
           <div class="item">
                <div class="box">
                     <input type="checkbox">
                </div>
                <div class="text">
-                    Make sure you have write-access to any and all of the GitHub repositories under the LSSTDESC organization to which you plan on contributing.
-                    By default, all repositories under the LSSTDESC organization are read-only for all the members.
+                    Call Service Desk +1 (650) 926-4357 to <b>request an account reactivation and password reset</b> for your SLAC Windows account. Local alternative is to visit the SLAC onsite support desk located in Building 50.
+                    <br>
+                    <br>
+                    They might want to verify your identity before assisting you with unlocking your account or changing your password by using one of the following methods
                     <ul>
-                         <li>If you think there's a possibility of you working on a repo you have not worked on before, ask for write access.</li>
-                         <li>If you are unsure whether you have write access to a repo, ask again anyway.</li>
-                         <li>If you are unsure who/where to ask for write access, ask on <a href="https://lsstc.slack.com/archives/C9E8VCR7H" title="link to LSSTC Slack">#desc-github-help</a> on LSSTC Slack workspace.</li>
+                         <li>SLAC ID badge or another form of picture ID</li>
+                         <li>Stanford email</li>
+                         <li>Non-SLAC email listed in peoplesoft portal</li>
+                         <li>DUO Push Authentication token</li>
+                         <!-- <li>If you are unsure who/where to ask for write access, ask on <a href="https://lsstc.slack.com/archives/C9E8VCR7H" title="link to LSSTC Slack">#desc-github-help</a> on LSSTC Slack workspace.</li> -->
                     </ul>
                </div>
           </div>
-          <!-- NERSC -->
-          <h3>NERSC</h3>
+          <div class="item">
+               <div class="normaltext">
+                    You will receive an email from SLAC IT Desk on the contact email you provided, with a secured email attached.
+               </div>
+          </div>
           <div class="item">
                <div class="box">
                     <input type="checkbox">
                </div>
                <div class="text">
-                    If you plan to join an analysis project during the meeting, make sure you have a NERSC account and
-                    remember your password
-                    (<em>nope, a SSH key is not enough</em>) and have 2-step verification (MFA) set up!
-                    <ul>
-                         <li>
-                              <a href="https://confluence.slac.stanford.edu/x/mgRTD" title="link to Confluence">Need to
-                                   apply for one?</a>
-                         </li>
-                         <li>
-                              <a href="https://iris.nersc.gov/login">Forgot your password?</a>
-                         </li>
-                         <li>
-                              Questions? Ask them in the
-                              <a href="https://lsstc.slack.com/messages/C2U2K05JR/"
-                                   title="link to LSSTC Slack">#desc-nersc</a> Slack channel.
-                         </li>
-                    </ul>
-                    Also, make sure you are in the NERSC "lsst" group.
-                    (Once logged into NERSC, run the "groups" command in a shell window.)
-                    If not, please follow the instructions in 
-                    <a href="https://confluence.slac.stanford.edu/display/LSSTDESC/Getting+a+NERSC+Computing+Account" title="nersc confluence link">this page</a> 
-                    under the heading: "What to do if you already have a NERSC account and need access to the DESC repo".
+                    Open the secured email from SLAC IT Desk and follow the instructions to reset your password.
+                    <br>
+                    <br>
+                    In order to read the secured email, you might need to create a dedicated password on securemail.slac.stanford.edu. Once done, you will be able to read the email online.
                </div>
           </div>
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- DESC kernels -->
+          <!-- Change your password -->
+          <h3>Change your Windows account password</h3>
+          <div class="item">
+               <div class="normaltext">
+                    Refer to the <a href="https://policies.slac.stanford.edu/categories/information-technology/computer-security-password">computer password policy</a> to choose a secured password.
+               </div>
+          </div>
           <div class="item">
                <div class="box">
                     <input type="checkbox">
                </div>
                <div class="text">
-                    Follow the <a href="https://confluence.slac.stanford.edu/x/o5DVE"
-                         title="link to Confluence">instructions to install DESC jupyter kernels</a>.
-                    You will need them to access e.g., DC2 data products or to use DESC software
-                    during the Meeting.
+                    Use the temporary password provided in the secured email from SLAC IT to set a new Windows account password.
                </div>
           </div>
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- Rubin Science Platform -->
-  <!--        <h3>Rubin Science Platform</h3>
+          <!-- 2FA -->
+          <h3>2-factor authentication</h3>
+          <div class="item">
+               <div class="normaltext">
+                    SLAC has enforced two-factor authentication for their accounts. If you already have a 2-factor authentication (YubiKey or DUO Push) set up at SLAC then you can check the next item as done.
+               </div>
+          </div>
           <div class="item">
                <div class="box">
                     <input type="checkbox">
                </div>
                <div class="text">
-                    If you are a DP0 delegate and plan on using the Rubin Science Platform (RSP), please ensure that you
-                    are able to login.
-                    Check out <a
-                         href="https://community.lsst.org/t/faq-technical-aspects-of-rubin-science-platform-accounts-for-dp0/4791">
-                         this post on Community</a> for the technical aspects of RSP.
-               </div>
-          </div>  -->
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- DC2 -->
-          <h3>DC2</h3>
-          <div class="item">
-               <div class="box">
-                    <input type="checkbox">
-               </div>
-               <div class="text">If you have not used any DC2 data tutorial notebooks
-                    before, check out the instructions on this
-                    <a href="https://confluence.slac.stanford.edu/x/Xgg4Dg" title="link to Confluence">step-by-step</a>
-                    guide. Also, bookmark the
-                    <a href="https://confluence.slac.stanford.edu/x/oJgHDg" title="link to Confluence">DC2 Data Product
-                         Overview page</a>
-                    and the
-                    <a href="https://github.com/LSSTDESC/DC2-analysis" title="link to GitHub">DC2-analysis GitHub
-                         repo</a> for easy access.
-                    Questions? Ask them in the
-                    <a href="https://lsstc.slack.com/messages/CBUMARLKC/"
-                         title="link to LSSTC Slack">#desc-dc2-users</a> Slack
-                    channel.
+                    Setup <a href="https://it.slac.stanford.edu/support/KB0010216" title="Two-factor authentication in SLAC">two-factor authentication</a> 
+                    for your account via the method of your choice (YubiKey or DUO mobile app).
+                    
                </div>
           </div>
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-          <!-- Social media -->
-          <h2>Social media</h2>
-          <!-- -->
-          <div class="item">
-               <div class="box">
-                    <input type="checkbox">
-               </div>
-               <div class="text">If you use social media professionally, please use the
-                    <a href="https://x.com/hashtag/lsstdesc" title="link to X(formerly Twitter)">#lsstdesc</a>
-                    hashtag when reporting highlights from the meeting!
-                    Remember the <a
-                         href="http://lsstdesc.org/sites/default/files/LSST_DESC_Professional_Conduct.pdf">Code of
-                         Conduct</a>!
-               </div>
-          </div>
-          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
           <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
           <div class="footer">
-               <p>This site uses cookies to keep track your checklist progress. The data are stored in your browser
-                    locally only.</p>
-               <p>If you have questions or suggestions about this page, please
-                    <a href="https://github.com/LSSTDESC/pre-meeting-checklist/issues" title="link to GitHub">open an
-                         issue</a> or contact
-                    <a href="https://yymao.github.io">Yao-Yuan Mao</a>.
-               </p>
+               <p>This site uses cookies to keep track your checklist progress. The data are only stored <b>locally</b> in your browser.</p>
+               <p>If you have questions or suggestions about the whole process, please contact 
+                    <a href="mailto:lsst-desc-help@slac.stanford.edu">DESC help</a> </p>
+               <p>or post to the <b>#desc-help</b> channel on the LSSTC Slack space.</p>
           </div>
 
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -405,7 +351,7 @@
                     else target.removeClass("done");
                     display_progress(1);
                     var record = $("input").map(function () { return this.checked ? 1 : 0; }).toArray().join("");
-                    Cookies.set(cookie_key, record, { expires: 21, path: "/pre-meeting-checklist/" });
+                    Cookies.set(cookie_key, record, { expires: 21, path: "/slac-authentication-transition-checklist/" });
                });
 
                var read_cookie = function () {
